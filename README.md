@@ -1,16 +1,7 @@
 # investment_calculator
 
-A new Flutter project.
+Simple project to test and get a feel for Dart and Flutter.
 
-## Getting Started
+## Idea of the app
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Takes input for invesment calculation based on the compound interest formula. The idea is based on the F.I.R.E. (Financial Independece Retire Eraly) movement.
