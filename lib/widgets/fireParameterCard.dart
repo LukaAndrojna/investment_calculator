@@ -46,58 +46,62 @@ class _FireInputCardState extends State<FireInputCard> {
                       .copyWith(color: Colors.white))),
         ],
       ),
-      body: Container(
-        padding: EdgeInsets.all(10),
-        child: Column(
-          children: [
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Principal',
-                hintText: '$_principal',
-              ),
-              controller: principalController,
-              onChanged: (value) => _principal = value,
-              keyboardType: TextInputType.number,
+      body: ListView(
+        children: [
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Column(
+              children: [
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Principal',
+                    hintText: '$_principal',
+                  ),
+                  controller: principalController,
+                  onChanged: (value) => _principal = value,
+                  keyboardType: TextInputType.number,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Monthly Instalment',
+                    hintText: '$_monthlyInstalment',
+                  ),
+                  controller: monthlyInstalmentController,
+                  onChanged: (value) => _monthlyInstalment = value,
+                  keyboardType: TextInputType.number,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Years you want to be investing',
+                    hintText: '$_years',
+                  ),
+                  controller: yearController,
+                  onChanged: (value) => _years = value,
+                  keyboardType: TextInputType.number,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Market Return',
+                    hintText: '$_marketReturn',
+                  ),
+                  controller: marketReturnController,
+                  onChanged: (value) => _marketReturn = value,
+                  keyboardType: TextInputType.number,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    labelText:
+                        'Increase of your monthly instalment per year in percent',
+                    hintText: '$_yearlyIncrease',
+                  ),
+                  controller: increaseController,
+                  onChanged: (value) => _yearlyIncrease = value,
+                  keyboardType: TextInputType.number,
+                ),
+              ],
             ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Monthly Instalment',
-                hintText: '$_monthlyInstalment',
-              ),
-              controller: monthlyInstalmentController,
-              onChanged: (value) => _monthlyInstalment = value,
-              keyboardType: TextInputType.number,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Years you want to be investing',
-                hintText: '$_years',
-              ),
-              controller: yearController,
-              onChanged: (value) => _years = value,
-              keyboardType: TextInputType.number,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Market Return',
-                hintText: '$_marketReturn',
-              ),
-              controller: marketReturnController,
-              onChanged: (value) => _marketReturn = value,
-              keyboardType: TextInputType.number,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText:
-                    'Increase of your monthly instalment per year in percent',
-                hintText: '$_yearlyIncrease',
-              ),
-              controller: increaseController,
-              onChanged: (value) => _yearlyIncrease = value,
-              keyboardType: TextInputType.number,
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
